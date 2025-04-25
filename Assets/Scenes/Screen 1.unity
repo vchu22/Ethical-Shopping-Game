@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 167730491}
   - component: {fileID: 167730493}
   - component: {fileID: 167730492}
+  - component: {fileID: 167730494}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -331,6 +332,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167730490}
   m_CullTransparentMesh: 1
+--- !u!114 &167730494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167730490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db6170be378ea744b163044d08e4ac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 158164292}
+  textSpeedInSeconds: 0.05
+  lines:
+  - Line 1 Line 1 Line 1, Line 1 Line 1 Line 1 Line 1 Line 1. Line 1 Line 1
+  - Line 2 Line 2 Line 2 Line 2 Line 2.
+  - Line 3 Line 3 Line 3 Line 3?
+  - Line 4 Line 4 Line 4 Line 4 Line 4, Line 4 Line 4 Line 4. Line 4 Line 4 Line
+    4!
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +945,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1589363260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 167730494}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
+        m_MethodName: NextLine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1589363260
 MonoBehaviour:
   m_ObjectHideFlags: 0
