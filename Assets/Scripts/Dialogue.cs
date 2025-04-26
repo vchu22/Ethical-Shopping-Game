@@ -38,7 +38,7 @@ public class Dialogue : MonoBehaviour
         if (index < lines.Length - 1)
         {
             index++;
-            textComponent.text += string.Empty;
+            textComponent.text = string.Empty; // Clear old text before typing the next line
             StartCoroutine(TypeLine());
         }
         else
