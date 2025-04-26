@@ -10,7 +10,6 @@ public class Dialogue : MonoBehaviour
 
     private int index;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         textComponent.text = string.Empty;
@@ -35,7 +34,7 @@ public class Dialogue : MonoBehaviour
     public void NextLine()
     {
         StopAllCoroutines();
-        
+
         if (index < lines.Length - 1)
         {
             index++;
@@ -45,6 +44,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             // transition to Screen 2
+            Helpers.NextScreen();
         }
     }
 }
