@@ -7,21 +7,21 @@ using UnityEngine.SceneManagement;
 public static class Helpers
 {
     /// <summary>
-    /// Move to the scene listed after the current scene in Build Profiles > Scene List
+    /// Move to the scene listed after the current scene listed in Build Profiles > Scene List
     /// </summary>
     public static void NextScreen()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     /// <summary>
-    /// Move to the scene listed before the current scene in Build Profiles > Scene List
+    /// Move to the scene listed before the current scene listed in Build Profiles > Scene List
     /// </summary>
     public static void PrevScreen()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
     /// <summary>
-    /// Move to the scene with the specified index in Build Profiles > Scene List
+    /// Move to the scene with the specified index listed in Build Profiles > Scene List
     /// </summary>
     /// <param name="i">A integer representing the index.</param>
     public static void GoToScreen(int i)
