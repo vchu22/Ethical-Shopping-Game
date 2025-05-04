@@ -1,18 +1,22 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public Button continueButton;
     public float textSpeedInSeconds = 0.1f;
-    public string[] lines;
+    public string[] linesRoundOne;
+    public string[] linesRoundTwo;
 
     private int index;
 
     void Start()
     {
         textComponent.text = string.Empty;
+        continueButton.onClick.AddListener(NextLine);
         StartDialogue();
     }
 
@@ -24,10 +28,21 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray())
+        if (GameState.currentRound == 1)
         {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeedInSeconds);
+            foreach (char c in linesRoundOne[index].ToCharArray())
+            {
+                textComponent.text += c;
+                yield return new WaitForSeconds(textSpeedInSeconds);
+            }
+        }
+        else if (GameState.currentRound == 2)
+        {
+            foreach (char c in linesRoundTwo[index].ToCharArray())
+            {
+                textComponent.text += c;
+                yield return new WaitForSeconds(textSpeedInSeconds);
+            }
         }
     }
 
@@ -35,7 +50,7 @@ public class Dialogue : MonoBehaviour
     {
         StopAllCoroutines();
 
-        if (index < lines.Length - 1)
+        if (index < linesRoundOne.Length - 1)
         {
             index++;
             textComponent.text = string.Empty; // Clear old text before typing the next line

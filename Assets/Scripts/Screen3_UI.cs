@@ -12,6 +12,13 @@ public class Screen3_UI : MonoBehaviour
     public void NextRound()
     {
         GameState.currentRound++;
-        Helpers.PrevScreen();
+        if (GameState.currentRound < 3)
+        {
+            Helpers.GoToScreen(0);
+        }
+        else
+        {
+            Helpers.PrevScreen();
+        }
     }
 }

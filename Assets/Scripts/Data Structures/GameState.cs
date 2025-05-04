@@ -4,6 +4,7 @@ using System.Linq;
 public static class GameState
 {
     public static int currentRound = 1;
+
     private static Aisle[] itemCatelog;
     public static int[] selectedAisleItemsIdx;
 
@@ -31,5 +32,13 @@ public static class GameState
     public static string[] getAisleNameList()
     {
         return itemCatelog.Select(itemCatelog => itemCatelog.name).ToArray();
+    }
+    public static string[] getAisleName()
+    {
+        return itemCatelog.Select(itemCatelog => itemCatelog.name).ToArray();
+    }
+    public static int getNumberOfAisles()
+    {
+        return itemCatelog.Length;
     }
 }

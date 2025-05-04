@@ -345,13 +345,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 158164292}
-  textSpeedInSeconds: 0.05
-  lines:
-  - Line 1 Line 1 Line 1, Line 1 Line 1 Line 1 Line 1 Line 1. Line 1 Line 1
-  - Line 2 Line 2 Line 2 Line 2 Line 2.
-  - Line 3 Line 3 Line 3 Line 3?
-  - Line 4 Line 4 Line 4 Line 4 Line 4, Line 4 Line 4 Line 4. Line 4 Line 4 Line
-    4!
+  continueButton: {fileID: 1589363259}
+  textSpeedInSeconds: 0.02
+  linesRoundOne:
+  - As you enter the store, you immediately lock eyes with the person you came to
+    meet.
+  - She is a representative of this small start-up, EthicWearTM, that develops new-tech
+    products.
+  - "You saw the ad for their latest invention - AR glasses that help you shop -
+    and couldn\xB4t resist trying it out."
+  - "\u201CHi! Just on time - let\xB4s get started\u201D."
+  - You are hoping the glasses could help you find products you need, or check for
+    allergens with more ease.
+  - The peanut allergens can be found in very unexpected foods.
+  - "\u201CFirst, we need to collect some base data,\u201D she said, and handed me
+    a shopping list."
+  - "\u201CPick one product for each item on the shopping list, and come back when
+    you are done\u201D."
+  linesRoundTwo:
+  - "\u201CNow you get to try the EthicWearTM \u201C, she says, handing the glasses
+    to you."
+  - You were worried about drawing too much attention in the store with a weird tech
+    on your head, but surprisingly, the glasses look a lot like any other.
+  - You breathe out with relief and put them on.
+  - "The software is already running, but you still don\xB4t know what it helps with
+    exactly, so you ask."
+  - "\u201CThe glasses aid you during shopping by providing extra information about
+    the product and the brand."
+  - The glasses use a database of good and bad practices of brands.
+  - "These details will either match the information on the packaging or not\u201D."
+  - "She leaned closer to me and said quieter - \u201CBasically, the glasses help
+    you see who\xB4s lying.\u201D"
+  - "\u201CThe shopping list is the same. As you go through the aisles and look closer
+    at the products, you\xB4ll also see more details."
+  - "Try to pick products that most correspond to your shopping habits. Any questions?\u201D"
+  - she asked with a big smile. I shake my head left to right.
+  - "\u201CGreat - I\xB4ll be here when you are done to discuss the results.\u201D"
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +938,14 @@ MonoBehaviour:
       image: {fileID: 2800000, guid: 50ceaa59738c06e4fa85af8b22236e7a, type: 3}
     - name: Water
       image: {fileID: 2800000, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
+  - name: Snacks
+    items:
+    - name: Milk
+      image: {fileID: 2800000, guid: 3d4961822bb5484499996a67e52493b7, type: 3}
+    - name: Soda
+      image: {fileID: 2800000, guid: 50ceaa59738c06e4fa85af8b22236e7a, type: 3}
+    - name: Water
+      image: {fileID: 2800000, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
 --- !u!4 &1170953871
 Transform:
   m_ObjectHideFlags: 0
@@ -1006,19 +1043,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1589363260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 167730494}
-        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
-        m_MethodName: NextLine
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1589363260
 MonoBehaviour:
   m_ObjectHideFlags: 0
