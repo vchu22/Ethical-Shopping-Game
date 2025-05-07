@@ -20,11 +20,11 @@ public class Screen2_UI : MonoBehaviour
     public void PopulateAislesUI()
     {
         ChangeAisleName();
-        for (int i = 0; i < GameState.itemCatelog[currentAisleIdx].items.Length; i++)
-        {
-            GameObject product = Instantiate(aisleProductsPrefab);
-            product.transform.parent = aisleProductsGridLayout.gameObject.transform;
-        }
+        //for (int i = 0; i < GameState.itemCatelog[currentAisleIdx].items.Length; i++)
+        //{
+        //    GameObject product = Instantiate(aisleProductsPrefab);
+        //    product.transform.parent = aisleProductsGridLayout.gameObject.transform;
+        //}
     }
     private void ChangeAisleName()
     {
