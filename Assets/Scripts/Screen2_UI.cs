@@ -135,20 +135,29 @@ public class Screen2_UI : MonoBehaviour
     public void OnProductClicked(AisleProduct aisleProduct)
     {
         Debug.Log("Product Clicked: " + aisleProduct.aisleItem.name);
-        var cardItem = GameState.shoppingCartItems.Where(item => item.name == aisleProduct.aisleItem.name).FirstOrDefault();
+
+        var cardItem = GameState.shoppingCartItems.Where(item => item.aisle.name == aisleProduct.aisleItem.aisle.name).FirstOrDefault();
+
+        // Check if the item is already in the cart and remove it if it is
+        if (cardItem != null && cardItem.name == aisleProduct.aisleItem.name)
+        {
+            GameState.shoppingCartItems.Remove(cardItem);
+            shoppingListUI.RemoveCrossedOffItem(aisleProduct.aisleItem.aisle.name);
+            return;
+        }
 
         if (cardItem != null)
         {
-            GameState.shoppingCartItems.Remove(cardItem);
-            checkedAisles.Remove(currentAisleIdx);
-            shoppingListUI.RemoveCrossedOffItem(GameState.itemCatelog[currentAisleIdx].name);
+            shoppingListUI.RemoveCrossedOffItem(aisleProduct.aisleItem.aisle.name);
         }
         else
         {
-            GameState.shoppingCartItems.Add(aisleProduct.aisleItem);
-            checkedAisles.Add(currentAisleIdx);
-            shoppingListUI.AddCrossedOffItem(GameState.itemCatelog[currentAisleIdx].name);
+            shoppingListUI.AddCrossedOffItem(aisleProduct.aisleItem.aisle.name);
         }
+        GameState.shoppingCartItems.Remove(cardItem);
+        GameState.shoppingCartItems.Add(aisleProduct.aisleItem);
+
+
 
     }
 }

@@ -13,6 +13,13 @@ public static class GameState
 
     public static void setupAisleProducts(Aisle[] input)
     {
+        foreach (Aisle a in input)
+        {
+            foreach (AisleItem item in a.items)
+            {
+                item.aisle = a;
+            }
+        }
         itemCatelog = input;
     }
     public static AisleItem[] getAisleProducts(int idx)
