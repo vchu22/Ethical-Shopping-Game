@@ -1,16 +1,16 @@
-using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public static class GameState
 {
     public static int currentRound = 1;
 
-    private static Aisle[] itemCatelog;
+    public static Aisle[] itemCatelog;
     public static int[] selectedAisleItemsIdx;
 
     public static void setupAisleProducts(Aisle[] input)
     {
-        itemCatelog = new Aisle[input.Length];
+        itemCatelog = input;
     }
     public static AisleItem[] getAisleProducts(int idx)
     {
@@ -33,9 +33,9 @@ public static class GameState
     {
         return itemCatelog.Select(itemCatelog => itemCatelog.name).ToArray();
     }
-    public static string[] getAisleName()
+    public static string getAisleName(int i)
     {
-        return itemCatelog.Select(itemCatelog => itemCatelog.name).ToArray();
+        return getAisleNameList()[i];
     }
     public static int getNumberOfAisles()
     {
