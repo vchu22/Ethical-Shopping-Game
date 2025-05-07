@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,8 @@ public class Screen2_UI : MonoBehaviour
     public TextMeshProUGUI aisleNameText;
     public GridLayoutGroup aisleProductsGridLayout;
     public GameObject aisleProductsPrefab;
+
+    public ProductInfoUI productInfoUI;
 
     private static int currentAisleIdx;
 
@@ -27,6 +30,7 @@ public class Screen2_UI : MonoBehaviour
         aisleSlots = aisleSlotContainer.GetComponentsInChildren<AisleSlot>();
         AssignSlots();
         PopulateAislesUI();
+        GameState.shoppingCartItems.Clear();
     }
 
     private void AssignSlots()
@@ -55,7 +59,7 @@ public class Screen2_UI : MonoBehaviour
         {
             if (slot.aisleItem != null)
             {
-                slot.DeleteAisleItem();
+                slot.DeleteSlotItem();
             }
         }
     }
@@ -71,8 +75,14 @@ public class Screen2_UI : MonoBehaviour
             if (assigned.aisleItem != null)
             {
                 var aisleSlot = assigned.slot;
-                var aisleItemObject = Instantiate(aisleProductsPrefab, aisleSlot.transform);
-                aisleSlot.SetAisleItem(assigned.aisleItem, aisleItemObject);
+                var aisleProductObject = Instantiate(aisleProductsPrefab, aisleSlot.transform);
+                var aisleProduct = aisleProductObject.GetComponent<AisleProduct>();
+                aisleProduct.aisleItem = assigned.aisleItem;
+                aisleProduct.infoClicked += OnAisleInfoClicked;
+                aisleProduct.clicked += OnProductClicked;
+
+                aisleSlot.SetSlotItem(assigned.aisleItem, aisleProduct);
+
             }
         }
     }
@@ -109,6 +119,17 @@ public class Screen2_UI : MonoBehaviour
     public void CheckOut()
     {
         Helpers.NextScreen();
+    }
+
+    private void OnAisleInfoClicked(AisleProduct aisleProduct)
+    {
+        productInfoUI.ShowProductInfo(aisleProduct);
+        Debug.Log("Product Info Clicked: " + aisleProduct.aisleItem.name);
+    }
+    public void OnProductClicked(AisleProduct aisleProduct)
+    {
+        GameState.shoppingCartItems.Add(aisleProduct.aisleItem);
+        Debug.Log("Product Clicked: " + aisleProduct.aisleItem.name);
     }
 }
 

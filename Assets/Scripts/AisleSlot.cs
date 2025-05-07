@@ -5,19 +5,23 @@ public class AisleSlot : MonoBehaviour
 {
 
     public AisleItem aisleItem;
-    public GameObject aisleItemObject;
+    public AisleProduct aisleProduct;
 
-    public void SetAisleItem(AisleItem item, GameObject gameObject)
+    public void SetSlotItem(AisleItem item, AisleProduct gameObject)
     {
+        if (aisleProduct != null)
+        {
+            DeleteSlotItem();
+        }
         aisleItem = item;
-        aisleItemObject = gameObject;
+        aisleProduct = gameObject;
     }
 
-    public void DeleteAisleItem()
+    public void DeleteSlotItem()
     {
-        Destroy(aisleItemObject);
+        Destroy(aisleProduct);
         aisleItem = null;
-        aisleItemObject = null;
+        aisleProduct = null;
     }
 
 }

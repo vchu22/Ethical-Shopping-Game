@@ -50,6 +50,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aef5229253960e458fb10af43587e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aisleItem:
+    name: 
+    image: {fileID: 0}
+    slotId: 0
+  aisleProduct: {fileID: 0}
 --- !u!222 &7885359435836267482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -65,7 +70,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7456422137520048166}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
