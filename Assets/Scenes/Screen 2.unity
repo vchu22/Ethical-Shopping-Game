@@ -1327,6 +1327,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3733005635624091278, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
   m_PrefabInstance: {fileID: 6766606064964352294}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &673365813 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 25611598500105668, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+  m_PrefabInstance: {fileID: 6766606064964352294}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1597e04c9a11ec445b6ec49c10671429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &689213717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,38 +1904,28 @@ MonoBehaviour:
     items:
     - name: Cereal 1
       image: {fileID: 2800000, guid: d3becc3a74d52904e8743c52f3f27ae4, type: 3}
-      slotId: 0
     - name: Cereal 2
       image: {fileID: 2800000, guid: bb1a3c2226db7374aad3a79ed70700b6, type: 3}
-      slotId: 0
     - name: Cereal 3
       image: {fileID: 2800000, guid: 1295f9914ea314740bd4e5deb04469a7, type: 3}
-      slotId: 0
   - name: Milks
     items:
     - name: Milk 1
       image: {fileID: 2800000, guid: 3d4961822bb5484499996a67e52493b7, type: 3}
-      slotId: 0
     - name: Milk 2
       image: {fileID: 2800000, guid: 50ceaa59738c06e4fa85af8b22236e7a, type: 3}
-      slotId: 0
     - name: Milk 3
       image: {fileID: 2800000, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
-      slotId: 0
     - name: Milk 4
       image: {fileID: 2800000, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
-      slotId: 0
   - name: Snacks
     items:
     - name: Chocolate 1
       image: {fileID: 2800000, guid: 3d4961822bb5484499996a67e52493b7, type: 3}
-      slotId: 0
     - name: Chocolate 2
       image: {fileID: 2800000, guid: 50ceaa59738c06e4fa85af8b22236e7a, type: 3}
-      slotId: 0
     - name: Chocolate 3
       image: {fileID: 2800000, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
-      slotId: 0
 --- !u!4 &1005233666
 Transform:
   m_ObjectHideFlags: 0
@@ -2646,6 +2647,7 @@ MonoBehaviour:
   aisleProductsPrefab: {fileID: 8194206238659316051, guid: df6ca438d00fadb4d9e6caeb4ca895ea, type: 3}
   productInfoUI: {fileID: 1484428057}
   aisleSlotContainer: {fileID: 689213717}
+  shoppingListUI: {fileID: 673365813}
 --- !u!1 &1822727071
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,6 +2925,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 730240086}
     m_Modifications:
+    - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3733005635624091278, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

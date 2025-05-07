@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7863565136061448954}
   - component: {fileID: 818808663406171102}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 1805971861936616554}
   - component: {fileID: 5259097279271650627}
   - component: {fileID: 824906896512416531}
+  - component: {fileID: 25611598500105668}
   m_Layer: 5
   m_Name: ShoppingList
   m_TagString: Untagged
@@ -243,3 +244,17 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &25611598500105668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916172446231174052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1597e04c9a11ec445b6ec49c10671429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shoppingListText: {fileID: 818808663406171102}
+  headerText: 'Shopping List '

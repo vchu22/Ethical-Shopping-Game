@@ -10,6 +10,7 @@ public class AisleProduct : MonoBehaviour
 
     public AisleItem aisleItem; // The item that this product represents
 
+    public int aisleIndex; // The index of the aisle this product belongs to
 
     public void OnInfoButtonClicked()
     {

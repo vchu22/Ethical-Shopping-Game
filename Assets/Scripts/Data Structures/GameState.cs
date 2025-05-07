@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -8,20 +9,24 @@ public static class GameState
     public static Aisle[] itemCatelog;
     public static int[] selectedAisleItemsIdx;
 
+    public static List<AisleItem> shoppingCartItems = new List<AisleItem>();
+
     public static void setupAisleProducts(Aisle[] input)
     {
         itemCatelog = input;
     }
     public static AisleItem[] getAisleProducts(int idx)
     {
-        if (idx < 0 || itemCatelog.Length <= idx) { 
-            return null; 
+        if (idx < 0 || itemCatelog.Length <= idx)
+        {
+            return null;
         }
         return itemCatelog[idx].items;
     }
     public static AisleItem[] getAisleProducts(string aisleName)
     {
-        foreach (Aisle a in itemCatelog) { 
+        foreach (Aisle a in itemCatelog)
+        {
             if (a.name == aisleName)
             {
                 return a.items;

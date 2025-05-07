@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -14,14 +15,19 @@ public class Screen2_UI : MonoBehaviour
 
     public ProductInfoUI productInfoUI;
 
-    private static int currentAisleIdx;
+    private int currentAisleIdx;
 
     public GameObject aisleSlotContainer;
+
+    public ShoppingListUI shoppingListUI;
 
     private AisleSlot[] aisleSlots;
 
     // Saves the assigned aisle items to their slots so they can be restored when the aisle is changed
+    // int is the aisle index
     private Dictionary<int, AssignedAisleItem[]> assignedAisleItems = new Dictionary<int, AssignedAisleItem[]>();
+
+    private HashSet<int> checkedAisles = new HashSet<int>();
 
     public void Awake()
     {
@@ -128,8 +134,22 @@ public class Screen2_UI : MonoBehaviour
     }
     public void OnProductClicked(AisleProduct aisleProduct)
     {
-        GameState.shoppingCartItems.Add(aisleProduct.aisleItem);
         Debug.Log("Product Clicked: " + aisleProduct.aisleItem.name);
+        var cardItem = GameState.shoppingCartItems.Where(item => item.name == aisleProduct.aisleItem.name).FirstOrDefault();
+
+        if (cardItem != null)
+        {
+            GameState.shoppingCartItems.Remove(cardItem);
+            checkedAisles.Remove(currentAisleIdx);
+            shoppingListUI.RemoveCrossedOffItem(GameState.itemCatelog[currentAisleIdx].name);
+        }
+        else
+        {
+            GameState.shoppingCartItems.Add(aisleProduct.aisleItem);
+            checkedAisles.Add(currentAisleIdx);
+            shoppingListUI.AddCrossedOffItem(GameState.itemCatelog[currentAisleIdx].name);
+        }
+
     }
 }
 
