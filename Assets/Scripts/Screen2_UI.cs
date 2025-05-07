@@ -146,14 +146,9 @@ public class Screen2_UI : MonoBehaviour
             return;
         }
 
-        if (cardItem != null)
-        {
-            shoppingListUI.RemoveCrossedOffItem(aisleProduct.aisleItem.aisle.name);
-        }
-        else
-        {
-            shoppingListUI.AddCrossedOffItem(aisleProduct.aisleItem.aisle.name);
-        }
+
+        shoppingListUI.AddCrossedOffItem(aisleProduct.aisleItem.aisle.name);
+
         GameState.shoppingCartItems.Remove(cardItem);
         GameState.shoppingCartItems.Add(aisleProduct.aisleItem);
 
