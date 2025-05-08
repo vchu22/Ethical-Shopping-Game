@@ -25,9 +25,7 @@ public class Screen2_UI : MonoBehaviour
 
     // Saves the assigned aisle items to their slots so they can be restored when the aisle is changed
     // int is the aisle index
-    private Dictionary<int, AssignedAisleItem[]> assignedAisleItems = new Dictionary<int, AssignedAisleItem[]>();
-
-    private HashSet<int> checkedAisles = new HashSet<int>();
+    private Dictionary<int, AssignedAisleItem[]> assignedAisleItems = new();
 
     public void Awake()
     {
@@ -136,7 +134,7 @@ public class Screen2_UI : MonoBehaviour
     {
         Debug.Log("Product Clicked: " + aisleProduct.aisleItem.name);
 
-        var cardItem = GameState.shoppingCartItems.Where(item => item.aisle.name == aisleProduct.aisleItem.aisle.name).FirstOrDefault();
+        var cardItem = GameState.shoppingCartItems.FirstOrDefault(item => item.aisle.name == aisleProduct.aisleItem.aisle.name);
 
         // Check if the item is already in the cart and remove it if it is
         if (cardItem != null && cardItem.name == aisleProduct.aisleItem.name)
