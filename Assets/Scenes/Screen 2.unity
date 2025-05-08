@@ -1943,17 +1943,20 @@ MonoBehaviour:
     - name: Milk 1
       image: {fileID: 4069681232031518727, guid: 3d4961822bb5484499996a67e52493b7, type: 3}
       productDesciption: Milk made by X
-      positiveEthicCategories: []
+      positiveEthicCategories:
+      - Positive 0
       negativeEthicCategories: []
     - name: Milk 2
       image: {fileID: -337227270553638500, guid: 50ceaa59738c06e4fa85af8b22236e7a, type: 3}
       productDesciption: Milk made by Y
       positiveEthicCategories: []
-      negativeEthicCategories: []
+      negativeEthicCategories:
+      - Negative 2
     - name: Milk 3
       image: {fileID: 4430571490802896335, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
       productDesciption: Milk made by Z
-      positiveEthicCategories: []
+      positiveEthicCategories:
+      - Positive 9
       negativeEthicCategories: []
     - name: Milk 4
       image: {fileID: 4430571490802896335, guid: 83b731184d810bc47a74fe460417d61d, type: 3}

@@ -705,9 +705,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1034028c4ee714a9d42509f00a92ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextRoundButton: {fileID: 0}
   cartProductParent: {fileID: 1028283183}
   cartProductPrefab: {fileID: 837440198793658376, guid: fc5c6246aebdcfb478c2abee11a571c5, type: 3}
+  ethicInfoText: {fileID: 2096924306}
 --- !u!1 &1028283182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,7 +1770,7 @@ GameObject:
   - component: {fileID: 2096924307}
   - component: {fileID: 2096924306}
   m_Layer: 5
-  m_Name: Categories
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
