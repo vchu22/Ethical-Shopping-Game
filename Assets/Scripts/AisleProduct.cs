@@ -38,6 +38,7 @@ public class AisleProduct : MonoBehaviour
     {
         aisleItem = item;
         productNameText.text = item.name;
+        productImage.sprite = item.image;
     }
 
 }
