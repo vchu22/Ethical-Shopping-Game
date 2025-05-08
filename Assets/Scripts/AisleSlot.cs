@@ -19,7 +19,10 @@ public class AisleSlot : MonoBehaviour
 
     public void DeleteSlotItem()
     {
-        Destroy(aisleProduct);
+        if(aisleProduct != null && aisleProduct.gameObject != null)
+        {
+            Destroy(aisleProduct.gameObject);
+        }
         aisleItem = null;
         aisleProduct = null;
     }
