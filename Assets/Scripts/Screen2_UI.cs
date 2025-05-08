@@ -83,7 +83,7 @@ public class Screen2_UI : MonoBehaviour
                 var aisleSlot = assigned.slot;
                 var aisleProductObject = Instantiate(aisleProductsPrefab, aisleSlot.transform);
                 var aisleProduct = aisleProductObject.GetComponent<AisleProduct>();
-                aisleProduct.aisleItem = assigned.aisleItem;
+                aisleProduct.SetAisleItem(assigned.aisleItem);
                 aisleProduct.infoClicked += OnAisleInfoClicked;
                 aisleProduct.clicked += OnProductClicked;
 

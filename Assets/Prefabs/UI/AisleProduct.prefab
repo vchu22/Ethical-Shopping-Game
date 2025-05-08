@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1631479582914502955}
   - component: {fileID: 7637815354192476241}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ProductName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -524,3 +524,5 @@ MonoBehaviour:
   aisleItem:
     name: 
     image: {fileID: 0}
+  productNameText: {fileID: 7637815354192476241}
+  productImage: {fileID: 84859249647661334}
