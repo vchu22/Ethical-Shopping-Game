@@ -10,13 +10,19 @@ public class Dialogue : MonoBehaviour
     public float textSpeedInSeconds = 0.1f;
     public string[] linesRoundOne;
     public string[] linesRoundTwo;
+    public string[] linesRoundThree;
 
     private int index;
+    string[][] lines = new string[3][];
 
     void Start()
     {
         textComponent.text = string.Empty;
         continueButton.onClick.AddListener(NextLine);
+        lines[0] = linesRoundOne;
+        lines[1] = linesRoundTwo;
+        lines[2] = linesRoundThree;
+
         StartDialogue();
     }
 
@@ -28,29 +34,18 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        if (GameState.currentRound == 1)
+        Debug.Log("Round: " + GameState.currentRound + ", Line " + index + " of " + lines[GameState.currentRound].Length);
+        foreach (char c in lines[GameState.currentRound][index].ToCharArray())
         {
-            foreach (char c in linesRoundOne[index].ToCharArray())
-            {
-                textComponent.text += c;
-                yield return new WaitForSeconds(textSpeedInSeconds);
-            }
-        }
-        else if (GameState.currentRound == 2)
-        {
-            foreach (char c in linesRoundTwo[index].ToCharArray())
-            {
-                textComponent.text += c;
-                yield return new WaitForSeconds(textSpeedInSeconds);
-            }
+            textComponent.text += c;
+            yield return new WaitForSeconds(textSpeedInSeconds);
         }
     }
 
     public void NextLine()
     {
         StopAllCoroutines();
-
-        if (index < linesRoundOne.Length - 1)
+        if (index < lines[GameState.currentRound].Length - 1)
         {
             index++;
             textComponent.text = string.Empty; // Clear old text before typing the next line
@@ -58,8 +53,16 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            // transition to Screen 2
-            Helpers.NextScreen();
+            if (GameState.currentRound < 2)
+            {
+                // transition to Screen 2
+                Helpers.NextScreen();
+            }
+            else
+            {
+                GameState.currentRound = 1;
+                Helpers.GoToScreen(0);
+            }
         }
     }
 }

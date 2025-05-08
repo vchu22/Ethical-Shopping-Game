@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class GameState
 {
-    public static int currentRound = 1;
+    public static int currentRound = 0;
 
     public static Aisle[] itemCatelog;
     public static int[] selectedAisleItemsIdx;
