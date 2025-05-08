@@ -6,6 +6,7 @@ public class ProductInfoUI : MonoBehaviour
     public GameObject productInfoPanel;
     public TextMeshProUGUI productNameText;
     public TextMeshProUGUI productDescriptionText;
+    public TextMeshProUGUI ethicInfoText;
 
     private AisleProduct currentProduct;
 
@@ -14,6 +15,23 @@ public class ProductInfoUI : MonoBehaviour
     {
         currentProduct = product;
         productNameText.text = product.aisleItem.name;
+        productDescriptionText.text = product.aisleItem.productDesciption;
+        ethicInfoText.text = "";
+        if (product.aisleItem.positiveEthicCategories.Length == 0 & product.aisleItem.negativeEthicCategories.Length == 0)
+        {
+            ethicInfoText.text = "None";
+        }
+        else
+        {
+            foreach (var item in product.aisleItem.positiveEthicCategories)
+            {
+                ethicInfoText.text += ("+ " + item + "\n");
+            }
+            foreach (var item in product.aisleItem.negativeEthicCategories)
+            {
+                ethicInfoText.text += ("- " + item + "\n");
+            }
+        }
         productInfoPanel.SetActive(true);
     }
 
