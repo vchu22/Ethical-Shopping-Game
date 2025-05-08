@@ -15,6 +15,8 @@ public class AisleProduct : MonoBehaviour
     public TextMeshProUGUI productNameText;
 
     public Image productImage;
+    
+    public Outline outline; // Reference to the outline component for highlighting
 
     public void OnInfoButtonClicked()
     {
@@ -39,6 +41,16 @@ public class AisleProduct : MonoBehaviour
         aisleItem = item;
         productNameText.text = item.name;
         productImage.sprite = item.image;
+    }
+    
+    public void Highlight()
+    {
+        outline.enabled = true;
+    }
+    
+    public void RemoveHighlight()
+    {
+        outline.enabled = false;
     }
 
 }

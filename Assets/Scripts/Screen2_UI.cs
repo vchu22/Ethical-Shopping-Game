@@ -89,6 +89,9 @@ public class Screen2_UI : MonoBehaviour
 
             }
         }
+        UpdateItemHighlights();
+        
+        Debug.Log("Shopping card contents: " +  string.Join( ", ", GameState.shoppingCartItems.Select(item => item.name)));
     }
     private void ChangeAisleName()
     {
@@ -143,15 +146,37 @@ public class Screen2_UI : MonoBehaviour
             shoppingListUI.RemoveCrossedOffItem(aisleProduct.aisleItem.aisle.name);
             return;
         }
-
-
+        
         shoppingListUI.AddCrossedOffItem(aisleProduct.aisleItem.aisle.name);
 
         GameState.shoppingCartItems.Remove(cardItem);
         GameState.shoppingCartItems.Add(aisleProduct.aisleItem);
+        UpdateItemHighlights();
+        
+        Debug.Log("Shopping card contents: " +  string.Join( ", ", GameState.shoppingCartItems.Select(item => item.name)));
 
 
+    }
 
+    public void UpdateItemHighlights()
+    {
+        foreach(var slot in aisleSlots)
+        {
+            if (slot.aisleItem != null)
+            {
+                var aisleProduct = slot.aisleProduct;
+                
+                if (GameState.shoppingCartItems.Contains(aisleProduct.aisleItem))
+                {
+                    aisleProduct.Highlight();
+                    Debug.Log("Highlighting: " + aisleProduct.aisleItem.name);
+                }
+                else
+                {
+                    aisleProduct.RemoveHighlight();
+                }
+            }
+        }
     }
 }
 

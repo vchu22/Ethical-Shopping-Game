@@ -472,8 +472,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4984347432751466430}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -526,3 +526,4 @@ MonoBehaviour:
     image: {fileID: 0}
   productNameText: {fileID: 7637815354192476241}
   productImage: {fileID: 84859249647661334}
+  outline: {fileID: 4984347432751466430}
