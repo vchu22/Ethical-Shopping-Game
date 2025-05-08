@@ -29,8 +29,6 @@ public class Screen2_UI : MonoBehaviour
 
     public void Awake()
     {
-        Debug.Log("Screen 2 Round " + GameState.currentRound);
-        Debug.Log("Aisle Index " + currentAisleIdx);
         aisleSlots = aisleSlotContainer.GetComponentsInChildren<AisleSlot>();
         AssignSlots();
         PopulateAislesUI();

@@ -60,7 +60,7 @@ public class Dialogue : MonoBehaviour
             }
             else
             {
-                GameState.currentRound = 1;
+                GameState.currentRound = 0;
                 Helpers.GoToScreen(0);
             }
         }

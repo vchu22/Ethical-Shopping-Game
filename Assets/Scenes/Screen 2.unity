@@ -2450,6 +2450,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7516618846029874007, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+      propertyPath: ethicInfoBox
+      value: 
+      objectReference: {fileID: 1484428058}
+    - target: {fileID: 7516618846029874007, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
       propertyPath: ethicInfoText
       value: 
       objectReference: {fileID: 806733682}
@@ -2569,6 +2573,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 562fc29799b71924b8862acad58d244b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1484428058 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7868116491270050986, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+  m_PrefabInstance: {fileID: 1484428055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1531297264
 GameObject:
   m_ObjectHideFlags: 0

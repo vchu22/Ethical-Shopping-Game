@@ -4,6 +4,8 @@ using UnityEngine;
 public class ProductInfoUI : MonoBehaviour
 {
     public GameObject productInfoPanel;
+    public GameObject ethicInfoBox;
+
     public TextMeshProUGUI productNameText;
     public TextMeshProUGUI productDescriptionText;
     public TextMeshProUGUI ethicInfoText;
@@ -13,6 +15,10 @@ public class ProductInfoUI : MonoBehaviour
     // Method to show the product information panel
     public void ShowProductInfo(AisleProduct product)
     {
+        if (GameState.currentRound == 0)
+        {
+            ethicInfoBox.SetActive(false);
+        }
         currentProduct = product;
         productNameText.text = product.aisleItem.name;
         productDescriptionText.text = product.aisleItem.productDesciption;
