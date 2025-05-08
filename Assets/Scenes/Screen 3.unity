@@ -708,6 +708,10 @@ MonoBehaviour:
   cartProductParent: {fileID: 1028283183}
   cartProductPrefab: {fileID: 837440198793658376, guid: fc5c6246aebdcfb478c2abee11a571c5, type: 3}
   ethicInfoText: {fileID: 2096924306}
+  summeryInfoText: {fileID: 1402480488}
+  summeryTextPositiveMore: The products you bought have more positive categories.
+  summeryTextNegativeMore: The products you bought have more negative categories.
+  summeryTextNeutral: The products you bought have more negative categories.
 --- !u!1 &1028283182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,7 +1286,7 @@ GameObject:
   - component: {fileID: 1655969007}
   - component: {fileID: 1655969006}
   m_Layer: 5
-  m_Name: Info
+  m_Name: Summery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
