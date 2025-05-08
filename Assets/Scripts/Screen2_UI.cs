@@ -35,6 +35,7 @@ public class Screen2_UI : MonoBehaviour
         AssignSlots();
         PopulateAislesUI();
         GameState.shoppingCartItems.Clear();
+        checkoutButton.gameObject.SetActive(false);
     }
 
     private void AssignSlots()
@@ -144,6 +145,8 @@ public class Screen2_UI : MonoBehaviour
         {
             GameState.shoppingCartItems.Remove(cardItem);
             shoppingListUI.RemoveCrossedOffItem(aisleProduct.aisleItem.aisle.name);
+            UpdateItemHighlights();
+            checkoutButton.gameObject.SetActive(false);
             return;
         }
         
@@ -154,6 +157,8 @@ public class Screen2_UI : MonoBehaviour
         UpdateItemHighlights();
         
         Debug.Log("Shopping card contents: " +  string.Join( ", ", GameState.shoppingCartItems.Select(item => item.name)));
+        
+        checkoutButton.gameObject.SetActive(GameState.shoppingCartItems.Count == GameState.itemCatelog.Length);
 
 
     }
