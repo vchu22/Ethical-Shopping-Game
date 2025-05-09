@@ -85,10 +85,7 @@ public class Screen2_UI : MonoBehaviour
                 aisleProduct.clicked += OnProductClicked;
 
                 aisleSlot.SetSlotItem(assigned.aisleItem, aisleProduct);
-                if (GameState.currentRound < 1)
-                {   
-                    aisleProduct.HideProductInfoButton();
-                }
+                
 
             }
         }
