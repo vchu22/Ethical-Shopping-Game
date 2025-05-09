@@ -1738,7 +1738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.1799927, y: 0}
+  m_AnchoredPosition: {x: -1.1800537, y: 0}
   m_SizeDelta: {x: -686.712, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809792298
@@ -1911,6 +1911,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aisles:
+  - name: Snacks
+    items:
+    - name: Jacky Almond Choco
+      image: {fileID: 4587264472944110332, guid: 65a52bcd78b43c94483993a17058f74d, type: 3}
+      productDesciption: 
+      positiveEthicCategories:
+      - Gluten Free
+      - 100% Plant Based
+      - No Slave Labor
+      negativeEthicCategories: []
+    - name: Lucy 80% Cocoa Chocolate
+      image: {fileID: -3273954320669750688, guid: 4dd0eeb93350e734fb53083789617632, type: 3}
+      productDesciption: 
+      positiveEthicCategories: []
+      negativeEthicCategories: []
+    - name: MeChoc Orange Caramel
+      image: {fileID: 4274457231189620715, guid: da42e05230a8b72459ca7bcb394cac83, type: 3}
+      productDesciption: 
+      positiveEthicCategories: []
+      negativeEthicCategories: []
+    - name: Milky Bar
+      image: {fileID: -4518487953152692245, guid: 4c8020c38b54fb649a0a06417ad5d768, type: 3}
+      productDesciption: 
+      positiveEthicCategories: []
+      negativeEthicCategories: []
+  - name: Milks
+    items:
+    - name: Gubami Oat Milk
+      image: {fileID: -1674646635899627090, guid: d944523e4fe049841861041f026ff8df, type: 3}
+      productDesciption: Milk made by X
+      positiveEthicCategories:
+      - Positive 0
+      negativeEthicCategories: []
+    - name: Milk Wan
+      image: {fileID: 5217688879230844414, guid: e485d54f01a51e142993b9bd254e4770, type: 3}
+      productDesciption: Milk made by Y
+      positiveEthicCategories: []
+      negativeEthicCategories:
+      - Negative 2
+    - name: Palio Milk
+      image: {fileID: -3628703151232074796, guid: 64c9eba8043c18e4b90543cd66b34834, type: 3}
+      productDesciption: Milk made by Z
+      positiveEthicCategories:
+      - Positive 9
+      negativeEthicCategories: []
+    - name: Ultra Soy Milk
+      image: {fileID: 5256734723134335149, guid: 381d60918a2a6df4282eafc6e76eb7ca, type: 3}
+      productDesciption: Milk made by A
+      positiveEthicCategories: []
+      negativeEthicCategories: []
   - name: Breakfast
     items:
     - name: Cereal 1
@@ -1937,48 +1987,6 @@ MonoBehaviour:
       - Positive 4
       - Positive 5
       - Positive 6
-      negativeEthicCategories: []
-  - name: Milks
-    items:
-    - name: Milk 1
-      image: {fileID: 4069681232031518727, guid: 3d4961822bb5484499996a67e52493b7, type: 3}
-      productDesciption: Milk made by X
-      positiveEthicCategories:
-      - Positive 0
-      negativeEthicCategories: []
-    - name: Milk 2
-      image: {fileID: -337227270553638500, guid: 50ceaa59738c06e4fa85af8b22236e7a, type: 3}
-      productDesciption: Milk made by Y
-      positiveEthicCategories: []
-      negativeEthicCategories:
-      - Negative 2
-    - name: Milk 3
-      image: {fileID: 4430571490802896335, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
-      productDesciption: Milk made by Z
-      positiveEthicCategories:
-      - Positive 9
-      negativeEthicCategories: []
-    - name: Milk 4
-      image: {fileID: 4430571490802896335, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
-      productDesciption: Milk made by A
-      positiveEthicCategories: []
-      negativeEthicCategories: []
-  - name: Snacks
-    items:
-    - name: Chocolate 1
-      image: {fileID: 4069681232031518727, guid: 3d4961822bb5484499996a67e52493b7, type: 3}
-      productDesciption: 
-      positiveEthicCategories: []
-      negativeEthicCategories: []
-    - name: Chocolate 2
-      image: {fileID: -337227270553638500, guid: 50ceaa59738c06e4fa85af8b22236e7a, type: 3}
-      productDesciption: 
-      positiveEthicCategories: []
-      negativeEthicCategories: []
-    - name: Chocolate 3
-      image: {fileID: 4430571490802896335, guid: 83b731184d810bc47a74fe460417d61d, type: 3}
-      productDesciption: 
-      positiveEthicCategories: []
       negativeEthicCategories: []
 --- !u!4 &1005233666
 Transform:
