@@ -18,6 +18,8 @@ public class AisleProduct : MonoBehaviour
     
     public Outline outline; // Reference to the outline component for highlighting
 
+    public GameObject productInfoButton;
+
     public void OnInfoButtonClicked()
     {
         // Invoke the infoClicked action if it's not null
@@ -53,4 +55,9 @@ public class AisleProduct : MonoBehaviour
         outline.enabled = false;
     }
 
+    public void HideProductInfoButton()
+    {
+        productInfoButton.SetActive(false);
+    }
+    
 }
