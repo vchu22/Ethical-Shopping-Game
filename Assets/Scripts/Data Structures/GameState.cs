@@ -11,6 +11,8 @@ public static class GameState
 
     public static List<AisleItem> shoppingCartItems = new List<AisleItem>();
 
+    public static int lastRoundEthicalProductCount = 0;
+
     public static void setupAisleProducts(Aisle[] input)
     {
         foreach (Aisle a in input)
