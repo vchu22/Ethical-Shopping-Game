@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,29 +27,33 @@ public class Screen3_UI : MonoBehaviour
         // Display ethic info
         int posCount = 0, negCount = 0;
         ethicInfoText.text = "";
+        HashSet<string> ethicInfoList = new HashSet<string>();
         foreach (var item in GameState.shoppingCartItems)
         {
             foreach (string desc in item.positiveEthicCategories)
             {
-                ethicInfoText.text += ("+ " + desc + "\n");
+                ethicInfoList.Add("+ " + desc);
                 posCount++;
             }
             foreach (string desc in item.negativeEthicCategories)
             {
-                ethicInfoText.text += ("- " + desc + "\n");
+                ethicInfoList.Add("- " + desc);
                 negCount++;
             }
+        }
+        foreach (string item in ethicInfoList) {
+            ethicInfoText.text += (item + "\n");
         }
         
         if (negCount <= 1)
         {
-            ethicInfoText.text = "The product you picked has 1 or no problematic brands." +
-                                 " The brands are associated with the following:" + "\n" + ethicInfoText.text;
+            ethicInfoText.text = "<b>The product you picked has 1 or no problematic brands." +
+                                 " The brands are associated with the following:</b>" + "\n" + ethicInfoText.text;
         }
         else
         {
-            ethicInfoText.text = "The products you picked contain more than 1 problematic brand. " +
-                                 "The brands are associated with the following:"+ "\n" + ethicInfoText.text;
+            ethicInfoText.text = "<b>The products you picked contain more than 1 problematic brand." +
+                                 "The brands are associated with the following:</b>" + "\n" + ethicInfoText.text;
         }
         var score = posCount - negCount;
         summeryInfoText.text = GetSummaryText(negCount,score);
