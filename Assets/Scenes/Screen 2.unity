@@ -786,8 +786,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Aisle 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc3e6c866905920448a8503d9c512919, type: 2}
+  m_sharedMaterial: {fileID: -4670449488604852332, guid: bc3e6c866905920448a8503d9c512919, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1245,15 +1245,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Previous Aisle
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc3e6c866905920448a8503d9c512919, type: 2}
+  m_sharedMaterial: {fileID: -4670449488604852332, guid: bc3e6c866905920448a8503d9c512919, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4289675822
+  m_fontColor: {r: 0.18039216, g: 0.25882354, b: 0.6862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1440,15 +1440,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Check Out
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc3e6c866905920448a8503d9c512919, type: 2}
+  m_sharedMaterial: {fileID: -4670449488604852332, guid: bc3e6c866905920448a8503d9c512919, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4289675822
+  m_fontColor: {r: 0.18039216, g: 0.25882354, b: 0.6862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2152,6 +2152,7 @@ GameObject:
   - component: {fileID: 1189120732}
   - component: {fileID: 1189120731}
   - component: {fileID: 1189120734}
+  - component: {fileID: 1189120735}
   m_Layer: 5
   m_Name: NextAisleButton
   m_TagString: Untagged
@@ -2382,6 +2383,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1189120735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189120729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.17892878, g: 0.25762478, b: 0.6855345, a: 0.88235295}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &1244978928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2709,6 +2725,7 @@ GameObject:
   - component: {fileID: 1531297267}
   - component: {fileID: 1531297266}
   - component: {fileID: 1531297269}
+  - component: {fileID: 1531297270}
   m_Layer: 5
   m_Name: CheckoutButton
   m_TagString: Untagged
@@ -2939,6 +2956,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1531297270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531297264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.17892878, g: 0.25762478, b: 0.6855345, a: 0.88235295}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1571860413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,6 +3215,7 @@ GameObject:
   - component: {fileID: 1822727074}
   - component: {fileID: 1822727073}
   - component: {fileID: 1822727076}
+  - component: {fileID: 1822727077}
   m_Layer: 5
   m_Name: PrevAisleButton
   m_TagString: Untagged
@@ -3413,6 +3446,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1822727077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822727071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.17892878, g: 0.25762478, b: 0.6855345, a: 0.88235295}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2115284191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,15 +3520,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Next Aisle
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc3e6c866905920448a8503d9c512919, type: 2}
+  m_sharedMaterial: {fileID: -4670449488604852332, guid: bc3e6c866905920448a8503d9c512919, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4289675822
+  m_fontColor: {r: 0.18039216, g: 0.25882354, b: 0.6862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
