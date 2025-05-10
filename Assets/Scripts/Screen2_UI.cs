@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Screen2_UI : MonoBehaviour
 {
@@ -43,13 +45,29 @@ public class Screen2_UI : MonoBehaviour
         foreach (var aisle in aisles)
         {
             AssignedAisleItem[] assignedItems = new AssignedAisleItem[aisle.items.Length];
+            int slotIndex = 0;
+            var availableSlots = new List<int>() {0, 1, 2, 3};
+            
             for (int i = 0; i < aisle.items.Length; i++)
             {
+                if (i == 2)
+                {
+                    availableSlots = new List<int>() {4, 5, 6, 7};
+                }
+                int randomIndex = Random.Range(0, availableSlots.Count);
+                Debug.Log("Random index: " + randomIndex);
+                Debug.Log("Available slots: " + string.Join(", ", availableSlots));
+                slotIndex = availableSlots[randomIndex];
+                availableSlots.Remove(slotIndex);
+
+                
+                
                 assignedItems[i] = new AssignedAisleItem
                 {
                     aisleItem = aisle.items[i],
-                    slot = aisleSlots[i >= aisleSlots.Length ? aisleSlots.Length - 1 : i] // we could randomize this
+                    slot = aisleSlots[slotIndex] // we could randomize this
                 };
+                slotIndex++;
             }
             assignedAisleItems.Add(aisleIndex, assignedItems);
             aisleIndex++;
