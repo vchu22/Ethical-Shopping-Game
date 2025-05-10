@@ -1915,79 +1915,119 @@ MonoBehaviour:
     items:
     - name: Jacky Almond Choco
       image: {fileID: 4587264472944110332, guid: 65a52bcd78b43c94483993a17058f74d, type: 3}
-      productDesciption: 
+      productDesciption: 100% Plant Based, Gluten Free, and No Slave Labor
       positiveEthicCategories:
-      - Gluten Free
-      - 100% Plant Based
-      - No Slave Labor
-      negativeEthicCategories: []
+      - High People Responsibility
+      - High Production Responsibility
+      - High Nature Responsibility
+      negativeEthicCategories:
+      - Vegetarian
     - name: Lucy 80% Cocoa Chocolate
       image: {fileID: -3273954320669750688, guid: 4dd0eeb93350e734fb53083789617632, type: 3}
-      productDesciption: 
+      productDesciption: Fair Trade
       positiveEthicCategories: []
-      negativeEthicCategories: []
+      negativeEthicCategories:
+      - Vegetarian
+      - Low People Responsibility
+      - Low Production Responsibility
+      - Low Nature Responsibility
     - name: MeChoc Orange Caramel
       image: {fileID: 4274457231189620715, guid: da42e05230a8b72459ca7bcb394cac83, type: 3}
-      productDesciption: 
-      positiveEthicCategories: []
-      negativeEthicCategories: []
+      productDesciption: Organic, Fair Trade, Guilt Free
+      positiveEthicCategories:
+      - Vegan
+      - High People Responsibility
+      - High Nature Responsibility
+      negativeEthicCategories:
+      - Low Production Responsibility
     - name: Milky Bar
       image: {fileID: -4518487953152692245, guid: 4c8020c38b54fb649a0a06417ad5d768, type: 3}
       productDesciption: 
       positiveEthicCategories: []
-      negativeEthicCategories: []
+      negativeEthicCategories:
+      - Vegetarian
+      - Low People Responsibility
+      - Low Production Responsibility
+      - Low Nature Responsibility
   - name: Milks
     items:
     - name: Gubami Oat Milk
       image: {fileID: -1674646635899627090, guid: d944523e4fe049841861041f026ff8df, type: 3}
-      productDesciption: Milk made by X
+      productDesciption: No added oil, plant-based, non-dairy, made with organic
+        oats
       positiveEthicCategories:
-      - Positive 0
-      negativeEthicCategories: []
+      - Vegan
+      - High People Responsibility
+      - High Nature Responsibility
+      negativeEthicCategories:
+      - Low Production Responsibility
     - name: Milk Wan
       image: {fileID: 5217688879230844414, guid: e485d54f01a51e142993b9bd254e4770, type: 3}
-      productDesciption: Milk made by Y
-      positiveEthicCategories: []
+      productDesciption: 100% organic. No added sugars! Creamy taste like nowhere
+        else. We are a small family business started in 1983. Enjoy this local delicacy!
+      positiveEthicCategories:
+      - High People Responsibility
       negativeEthicCategories:
-      - Negative 2
+      - Vegetarian
+      - Low Production Responsibility
+      - Low Nature Responsibility
     - name: Palio Milk
       image: {fileID: -3628703151232074796, guid: 64c9eba8043c18e4b90543cd66b34834, type: 3}
-      productDesciption: Milk made by Z
-      positiveEthicCategories:
-      - Positive 9
-      negativeEthicCategories: []
+      productDesciption: Nature Alliance, Carban neutral 2030, Family owned since
+        1948
+      positiveEthicCategories: []
+      negativeEthicCategories:
+      - Vegetarian
+      - Medium People Responsibility
+      - Low Production Responsibility
+      - Low Nature Responsibility
     - name: Ultra Soy Milk
       image: {fileID: 5256734723134335149, guid: 381d60918a2a6df4282eafc6e76eb7ca, type: 3}
-      productDesciption: Milk made by A
-      positiveEthicCategories: []
-      negativeEthicCategories: []
+      productDesciption: Nature Alliance, No Sugar, No Dairy, Packed with protein
+      positiveEthicCategories:
+      - Vegan
+      - High People Responsibility
+      - High Nature Responsibility
+      negativeEthicCategories:
+      - Medium Production Responsibility
   - name: Breakfast
     items:
     - name: Cereal 1
       image: {fileID: -2457546523067722535, guid: d3becc3a74d52904e8743c52f3f27ae4, type: 3}
       productDesciption: Cereal made by X
-      positiveEthicCategories:
-      - Positive 1
-      - Positive 2
-      - Positive 3
+      positiveEthicCategories: []
       negativeEthicCategories:
-      - Negative 1
+      - Vegetarian
+      - Low People Responsibility
+      - Low Production Responsibility
+      - Low Nature Responsibility
     - name: Cereal 2
       image: {fileID: 5203858375507177890, guid: bb1a3c2226db7374aad3a79ed70700b6, type: 3}
       productDesciption: Cereal made by Y
-      positiveEthicCategories: []
+      positiveEthicCategories:
+      - Vegan
+      - High People Responsibility
+      - High Production Responsibility
       negativeEthicCategories:
-      - Negative 1
-      - Negative 2
-      - Negative 3
+      - Low Nature Responsibility
     - name: Cereal 3
       image: {fileID: 3912390295466359699, guid: 1295f9914ea314740bd4e5deb04469a7, type: 3}
       productDesciption: Cereal made by Z
+      positiveEthicCategories: []
+      negativeEthicCategories:
+      - Vegetarian
+      - Low People Responsibility
+      - Low Production Responsibility
+      - Low Nature Responsibility
+    - name: Cereal 4
+      image: {fileID: 3912390295466359699, guid: 1295f9914ea314740bd4e5deb04469a7, type: 3}
+      productDesciption: Cereal made by XY
       positiveEthicCategories:
-      - Positive 4
-      - Positive 5
-      - Positive 6
-      negativeEthicCategories: []
+      - High People Responsibility
+      negativeEthicCategories:
+      - Vegetarian
+      - Low Production Responsibility
+      - Low Nature Responsibility
 --- !u!4 &1005233666
 Transform:
   m_ObjectHideFlags: 0
