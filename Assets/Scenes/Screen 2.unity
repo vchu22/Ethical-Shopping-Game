@@ -1919,7 +1919,8 @@ MonoBehaviour:
     items:
     - name: Jacky Almond Choco
       image: {fileID: 4587264472944110332, guid: 65a52bcd78b43c94483993a17058f74d, type: 3}
-      productDesciption: 100% Plant Based, Gluten Free, and No Slave Labor
+      productDesciption: 'Price: $$$, 100% Plant Based, Gluten Free, and No Slave
+        Labor'
       positiveEthicCategories:
       - High People Responsibility
       - High Production Responsibility
@@ -1928,7 +1929,7 @@ MonoBehaviour:
       - Vegetarian
     - name: Lucy 80% Cocoa Chocolate
       image: {fileID: -3273954320669750688, guid: 4dd0eeb93350e734fb53083789617632, type: 3}
-      productDesciption: Fair Trade
+      productDesciption: 'Price: $$$, Fair Trade'
       positiveEthicCategories: []
       negativeEthicCategories:
       - Vegetarian
@@ -1937,7 +1938,7 @@ MonoBehaviour:
       - Low Nature Responsibility
     - name: MeChoc Orange Caramel
       image: {fileID: 4274457231189620715, guid: da42e05230a8b72459ca7bcb394cac83, type: 3}
-      productDesciption: Organic, Fair Trade, Guilt Free
+      productDesciption: 'Price: $$, Organic, Fair Trade, Guilt Free'
       positiveEthicCategories:
       - Vegan
       - High People Responsibility
@@ -1946,7 +1947,7 @@ MonoBehaviour:
       - Low Production Responsibility
     - name: Milky Bar
       image: {fileID: -4518487953152692245, guid: 4c8020c38b54fb649a0a06417ad5d768, type: 3}
-      productDesciption: 
+      productDesciption: 'Price: $'
       positiveEthicCategories: []
       negativeEthicCategories:
       - Vegetarian
@@ -1957,8 +1958,8 @@ MonoBehaviour:
     items:
     - name: Gubami Oat Milk
       image: {fileID: -1674646635899627090, guid: d944523e4fe049841861041f026ff8df, type: 3}
-      productDesciption: No added oil, plant-based, non-dairy, made with organic
-        oats
+      productDesciption: 'Price: $$, No added oil, plant-based, non-dairy, made with
+        organic oats'
       positiveEthicCategories:
       - Vegan
       - High People Responsibility
@@ -1967,8 +1968,9 @@ MonoBehaviour:
       - Low Production Responsibility
     - name: Milk Wan
       image: {fileID: 5217688879230844414, guid: e485d54f01a51e142993b9bd254e4770, type: 3}
-      productDesciption: 100% organic. No added sugars! Creamy taste like nowhere
-        else. We are a small family business started in 1983. Enjoy this local delicacy!
+      productDesciption: 'Price: $$$, 100% organic. No added sugars! Creamy taste
+        like nowhere else. We are a small family business started in 1983. Enjoy
+        this local delicacy!'
       positiveEthicCategories:
       - High People Responsibility
       negativeEthicCategories:
@@ -1977,8 +1979,8 @@ MonoBehaviour:
       - Low Nature Responsibility
     - name: Palio Milk
       image: {fileID: -3628703151232074796, guid: 64c9eba8043c18e4b90543cd66b34834, type: 3}
-      productDesciption: Nature Alliance, Carban neutral 2030, Family owned since
-        1948
+      productDesciption: 'Price: $, Nature Alliance, Carban neutral 2030, Family
+        owned since 1948'
       positiveEthicCategories: []
       negativeEthicCategories:
       - Vegetarian
@@ -1987,7 +1989,8 @@ MonoBehaviour:
       - Low Nature Responsibility
     - name: Ultra Soy Milk
       image: {fileID: 5256734723134335149, guid: 381d60918a2a6df4282eafc6e76eb7ca, type: 3}
-      productDesciption: Nature Alliance, No Sugar, No Dairy, Packed with protein
+      productDesciption: 'Price: $$$, Nature Alliance, No Sugar, No Dairy, Packed
+        with protein'
       positiveEthicCategories:
       - Vegan
       - High People Responsibility
@@ -1998,7 +2001,7 @@ MonoBehaviour:
     items:
     - name: Vital Fit
       image: {fileID: 6757092736119751855, guid: 9391cc560572eba4d9717a73ecb9f9bf, type: 3}
-      productDesciption: $$, Organic, Less Sugar
+      productDesciption: 'Price: $$, Organic, Less Sugar'
       positiveEthicCategories:
       - High People Responsibility
       negativeEthicCategories:
@@ -2007,7 +2010,7 @@ MonoBehaviour:
       - Medium Production Responsibility
     - name: Corn & Fun
       image: {fileID: 8672283303139000504, guid: 04b50043e6e4c274d998d5545179180a, type: 3}
-      productDesciption: $, Gluten Free
+      productDesciption: 'Price: $, Gluten Free'
       positiveEthicCategories: []
       negativeEthicCategories:
       - Low Nature Responsibility
@@ -2016,7 +2019,7 @@ MonoBehaviour:
       - Vegetarian
     - name: My Corn
       image: {fileID: -2545256847680072413, guid: d2273f0955f9e424084e68a641cd3318, type: 3}
-      productDesciption: $$$, Organic, Vegan
+      productDesciption: 'Price: $$$, Organic, Vegan'
       positiveEthicCategories:
       - Vegan
       - High Production Responsibility
@@ -2025,9 +2028,8 @@ MonoBehaviour:
       - Medium Nature Responsibility
     - name: Loop Loops
       image: {fileID: -8025333628170399916, guid: ad5a53a180ad8cb46986adf2d5cd4108, type: 3}
-      productDesciption: $
-      positiveEthicCategories:
-      - 
+      productDesciption: 'Price: $, Family Size'
+      positiveEthicCategories: []
       negativeEthicCategories:
       - Vegetarian
       - Low Production Responsibility
