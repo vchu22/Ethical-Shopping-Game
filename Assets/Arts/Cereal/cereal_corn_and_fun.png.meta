@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: c5e8be6ae57261848b22baf32f7ac85d
+guid: 04b50043e6e4c274d998d5545179180a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6299817030176845272
-    second: window_slim_version_for secondarymenu_0
+      213: 8672283303139000504
+    second: cereal 2_0
   - first:
-      213: -2331073947079762590
-    second: window_slim_version_for secondarymenu_1
+      213: 1937469713259621491
+    second: cereal 2_1
+  - first:
+      213: -2559603375639432753
+    second: cereal 2_2
+  - first:
+      213: -8375575401282100643
+    second: cereal 2_3
+  - first:
+      213: -2055633531414095711
+    second: cereal 2_4
+  - first:
+      213: -3530828757265772691
+    second: cereal 2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: window_slim_version_for secondarymenu_0
+      name: cereal 2_0
       rect:
         serializedVersion: 2
-        x: 864
-        y: 615
-        width: 983
-        height: 422
+        x: 179
+        y: 29
+        width: 824
+        height: 1102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8dda5a906327d6750800000000000000
-      internalID: 6299817030176845272
+      spriteID: 8b0c62b67b32a5870800000000000000
+      internalID: 8672283303139000504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: window_slim_version_for secondarymenu_1
+      name: cereal 2_1
       rect:
         serializedVersion: 2
-        x: 864
-        y: 187
-        width: 983
-        height: 422
+        x: 192
+        y: 605
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26d942f789c56afd0800000000000000
-      internalID: -2331073947079762590
+      spriteID: 37ceae5607643ea10800000000000000
+      internalID: 1937469713259621491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cereal 2_2
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 22
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1fe1d8a467a7cd0800000000000000
+      internalID: -2559603375639432753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cereal 2_3
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 8
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52a4195c8af3cb80800000000000000
+      internalID: -8375575401282100643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cereal 2_4
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 0
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a85ea3c13ce873e0800000000000000
+      internalID: -2055633531414095711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cereal 2_5
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 3
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f8070d3f9fffec0800000000000000
+      internalID: -3530828757265772691
       vertices: []
       indices: 
       edges: []
@@ -160,8 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      window_slim_version_for secondarymenu_0: 6299817030176845272
-      window_slim_version_for secondarymenu_1: -2331073947079762590
+      cereal 2_0: 8672283303139000504
+      cereal 2_1: 1937469713259621491
+      cereal 2_2: -2559603375639432753
+      cereal 2_3: -8375575401282100643
+      cereal 2_4: -2055633531414095711
+      cereal 2_5: -3530828757265772691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

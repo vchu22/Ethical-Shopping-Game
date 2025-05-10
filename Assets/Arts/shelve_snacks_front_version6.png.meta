@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shelve_snacks_front_version6_0: -7116900419227928160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

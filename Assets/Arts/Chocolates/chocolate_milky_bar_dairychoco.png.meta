@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chocolate_milky_bar_dairychoco_0: -4518487953152692245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

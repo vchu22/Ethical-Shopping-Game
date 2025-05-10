@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      milk_palio_fakemarkings_dairy_backdark_0: 8842803058134413758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

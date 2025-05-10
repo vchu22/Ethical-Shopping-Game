@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      milk_ultra_soy_frontlight_0: 5256734723134335149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

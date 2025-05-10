@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 637bfae866084c34f9338609667995f8
+guid: 9391cc560572eba4d9717a73ecb9f9bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1877153872690872347
-    second: shelve_snacks_back_version1_0
+      213: 6757092736119751855
+    second: cereal 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shelve_snacks_back_version1_0
+      name: cereal 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 115
+        y: 26
+        width: 820
+        height: 1123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b100d7a608dfc0a10800000000000000
-      internalID: 1877153872690872347
+      spriteID: fa44acafa0406cd50800000000000000
+      internalID: 6757092736119751855
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shelve_snacks_back_version1_0: 1877153872690872347
+      cereal 1_0: 6757092736119751855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

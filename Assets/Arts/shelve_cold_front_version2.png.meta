@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shelve_cold_front_version2_0: -7745939975209618963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

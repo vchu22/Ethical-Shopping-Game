@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      milk_milkman_dairy_frontlight_0: 5217688879230844414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

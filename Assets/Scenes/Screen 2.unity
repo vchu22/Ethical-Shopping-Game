@@ -1738,7 +1738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.1800537, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: -686.712, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809792298
@@ -1992,42 +1992,43 @@ MonoBehaviour:
       - Medium Production Responsibility
   - name: Breakfast
     items:
-    - name: Cereal 1
-      image: {fileID: -2457546523067722535, guid: d3becc3a74d52904e8743c52f3f27ae4, type: 3}
-      productDesciption: Cereal made by X
-      positiveEthicCategories: []
+    - name: Vital Fit
+      image: {fileID: 6757092736119751855, guid: 9391cc560572eba4d9717a73ecb9f9bf, type: 3}
+      productDesciption: $$, Organic, Less Sugar
+      positiveEthicCategories:
+      - High People Responsibility
       negativeEthicCategories:
       - Vegetarian
-      - Low People Responsibility
-      - Low Production Responsibility
       - Low Nature Responsibility
-    - name: Cereal 2
-      image: {fileID: 5203858375507177890, guid: bb1a3c2226db7374aad3a79ed70700b6, type: 3}
-      productDesciption: Cereal made by Y
+      - Medium Production Responsibility
+    - name: Corn & Fun
+      image: {fileID: 8672283303139000504, guid: 04b50043e6e4c274d998d5545179180a, type: 3}
+      productDesciption: $, Gluten Free
+      positiveEthicCategories: []
+      negativeEthicCategories:
+      - Low Nature Responsibility
+      - Low Production Responsibility
+      - Low People Responsibility
+      - Vegetarian
+    - name: My Corn
+      image: {fileID: -2545256847680072413, guid: d2273f0955f9e424084e68a641cd3318, type: 3}
+      productDesciption: $$$, Organic, Vegan
       positiveEthicCategories:
       - Vegan
-      - High People Responsibility
       - High Production Responsibility
-      negativeEthicCategories:
-      - Low Nature Responsibility
-    - name: Cereal 3
-      image: {fileID: 3912390295466359699, guid: 1295f9914ea314740bd4e5deb04469a7, type: 3}
-      productDesciption: Cereal made by Z
-      positiveEthicCategories: []
-      negativeEthicCategories:
-      - Vegetarian
-      - Low People Responsibility
-      - Low Production Responsibility
-      - Low Nature Responsibility
-    - name: Cereal 4
-      image: {fileID: 3912390295466359699, guid: 1295f9914ea314740bd4e5deb04469a7, type: 3}
-      productDesciption: Cereal made by XY
-      positiveEthicCategories:
       - High People Responsibility
       negativeEthicCategories:
+      - Medium Nature Responsibility
+    - name: Loop Loops
+      image: {fileID: -8025333628170399916, guid: ad5a53a180ad8cb46986adf2d5cd4108, type: 3}
+      productDesciption: $
+      positiveEthicCategories:
+      - 
+      negativeEthicCategories:
       - Vegetarian
       - Low Production Responsibility
       - Low Nature Responsibility
+      - Low People Responsibility
 --- !u!4 &1005233666
 Transform:
   m_ObjectHideFlags: 0
@@ -2587,6 +2588,18 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1449985242846612618, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1820
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449985242846612618, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1135.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449985242846612618, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.21
+      objectReference: {fileID: 0}
     - target: {fileID: 2620399942289889601, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2667,6 +2680,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5146825359909338897, guid: a75dd6cc0ab390442a9e9520b2cd5a35, type: 3}
+    - target: {fileID: 4742626314107236141, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8980392
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742626314107236141, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742626314107236141, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742626314107236141, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9725491
+      objectReference: {fileID: 0}
     - target: {fileID: 4816206326493564929, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
       propertyPath: m_Name
       value: ProductInfoUI
@@ -2697,7 +2726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5527874649879933916, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.999929
+      value: -4.999939
       objectReference: {fileID: 0}
     - target: {fileID: 5942267994827405391, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}
       propertyPath: m_fontAsset
@@ -3419,7 +3448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: -26.5, y: 20}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1822727073
@@ -3784,6 +3813,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 730240086}
     m_Modifications:
+    - target: {fileID: 818808663406171102, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_text
+      value: 'Shopping List
+
+        - Cat 1
+
+        - Cat 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 818808663406171102, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_margin.w
+      value: 13.304985
+      objectReference: {fileID: 0}
+    - target: {fileID: 818808663406171102, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_margin.z
+      value: 2.2867966
+      objectReference: {fileID: 0}
+    - target: {fileID: 818808663406171102, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.6862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 818808663406171102, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.25490198
+      objectReference: {fileID: 0}
+    - target: {fileID: 818808663406171102, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.1764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 818808663406171102, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4289675565
+      objectReference: {fileID: 0}
     - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3791,6 +3852,14 @@ PrefabInstance:
     - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 384.834
       objectReference: {fileID: 0}
     - target: {fileID: 2392589851653334045, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3826,11 +3895,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3733005635624091278, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 353
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3733005635624091278, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 800
+      value: 403.962
       objectReference: {fileID: 0}
     - target: {fileID: 3733005635624091278, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3862,11 +3931,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3733005635624091278, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -26.5
       objectReference: {fileID: 0}
     - target: {fileID: 3733005635624091278, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -20
+      value: -221.654
       objectReference: {fileID: 0}
     - target: {fileID: 3733005635624091278, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3883,6 +3952,34 @@ PrefabInstance:
     - target: {fileID: 3916172446231174052, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
       propertyPath: m_Name
       value: ShoppingList
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259097279271650627, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259097279271650627, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7646303671360635943, guid: 65346be4149f2ae479d3310a0f270051, type: 3}
+    - target: {fileID: 5259097279271650627, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259097279271650627, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259097279271650627, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259097279271650627, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259097279271650627, guid: d64f1a5cad56d1e489ca4f91577ac24b, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
