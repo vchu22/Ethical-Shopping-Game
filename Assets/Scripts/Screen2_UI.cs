@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -24,6 +22,11 @@ public class Screen2_UI : MonoBehaviour
     public ShoppingListUI shoppingListUI;
 
     private AisleSlot[] aisleSlots;
+
+    public Image background;
+    public Sprite[] backgroundImages;
+    public Image aisleShelf;
+    public Sprite[] aisleShelfImages;
 
     // Saves the assigned aisle items to their slots so they can be restored when the aisle is changed
     // int is the aisle index
@@ -89,6 +92,7 @@ public class Screen2_UI : MonoBehaviour
     {
         CleanUpAisleSlots();
         ChangeAisleName();
+        ChangeAisleBackground();
 
         var aisle = assignedAisleItems[currentAisleIdx];
         foreach (var assigned in aisle)
@@ -111,6 +115,13 @@ public class Screen2_UI : MonoBehaviour
         
         Debug.Log("Shopping card contents: " +  string.Join( ", ", GameState.shoppingCartItems.Select(item => item.name)));
     }
+
+    private void ChangeAisleBackground()
+    {
+        background.sprite = backgroundImages[currentAisleIdx];
+        aisleShelf.sprite = aisleShelfImages[currentAisleIdx];
+    }
+
     private void ChangeAisleName()
     {
         aisleNameText.text = GameState.itemCatelog[currentAisleIdx].name;
