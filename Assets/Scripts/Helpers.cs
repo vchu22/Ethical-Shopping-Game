@@ -36,12 +36,4 @@ public static class Helpers
     {
         SceneManager.LoadScene(name);
     }
-    /// <summary>
-    /// Move to the scene of the SceneAsset.
-    /// </summary>
-    /// <param name="scene">A SceneAsset object representing the scene to move to.</param>
-    public static void GoToScreen(SceneAsset scene)
-    {
-        SceneManager.LoadScene(scene.name);
-    }
 }
