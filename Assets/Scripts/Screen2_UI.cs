@@ -28,6 +28,7 @@ public class Screen2_UI : MonoBehaviour
     public Image aisleShelf;
     public Sprite[] aisleShelfImages;
     public RectTransform aisleNameRectTransform;
+    private Vector3 aisleNameOriginalPosition;
 
     // Saves the assigned aisle items to their slots so they can be restored when the aisle is changed
     // int is the aisle index
@@ -35,6 +36,7 @@ public class Screen2_UI : MonoBehaviour
 
     public void Awake()
     {
+        aisleNameOriginalPosition = aisleNameRectTransform.localPosition;
         aisleSlots = aisleSlotContainer.GetComponentsInChildren<AisleSlot>();
         AssignSlots();
         PopulateAislesUI();
@@ -123,7 +125,10 @@ public class Screen2_UI : MonoBehaviour
         aisleShelf.sprite = aisleShelfImages[currentAisleIdx];
         if (currentAisleIdx == 1) 
         {
-            aisleNameRectTransform.Translate(new Vector2(455,-10));
+            aisleNameRectTransform.localPosition = new Vector3(800,-70,0);
+        } else
+        {
+            aisleNameRectTransform.localPosition = aisleNameOriginalPosition;
         }
     }
 
