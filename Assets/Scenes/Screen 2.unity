@@ -3457,6 +3457,7 @@ MonoBehaviour:
   - {fileID: -7116900419227928160, guid: 25eab45c17f3e814fad9b9a03f96033a, type: 3}
   - {fileID: 9064209012770098577, guid: 7f46ced025e79c0459fc20607925e78b, type: 3}
   - {fileID: 237187491959154097, guid: a2e71b2feb4986747a4e83084b00054e, type: 3}
+  aisleNameRectTransform: {fileID: 49865833}
 --- !u!224 &1736007277 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1449985242846612618, guid: f08c71b72fe5699478c71d22c405dc33, type: 3}

@@ -27,6 +27,7 @@ public class Screen2_UI : MonoBehaviour
     public Sprite[] backgroundImages;
     public Image aisleShelf;
     public Sprite[] aisleShelfImages;
+    public RectTransform aisleNameRectTransform;
 
     // Saves the assigned aisle items to their slots so they can be restored when the aisle is changed
     // int is the aisle index
@@ -120,6 +121,10 @@ public class Screen2_UI : MonoBehaviour
     {
         background.sprite = backgroundImages[currentAisleIdx];
         aisleShelf.sprite = aisleShelfImages[currentAisleIdx];
+        if (currentAisleIdx == 1) 
+        {
+            aisleNameRectTransform.Translate(new Vector2(455,-10));
+        }
     }
 
     private void ChangeAisleName()
