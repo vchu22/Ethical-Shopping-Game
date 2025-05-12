@@ -8,9 +8,6 @@ using Random = UnityEngine.Random;
 public class Screen2_UI : MonoBehaviour
 {
     public Button checkoutButton;
-
-    public TextMeshProUGUI aisleNameText;
-    public GridLayoutGroup aisleProductsGridLayout;
     public GameObject aisleProductsPrefab;
 
     public ProductInfoUI productInfoUI;
@@ -21,14 +18,13 @@ public class Screen2_UI : MonoBehaviour
 
     public ShoppingListUI shoppingListUI;
 
-    private AisleSlot[] aisleSlots;
-
     public Image background;
     public Sprite[] backgroundImages;
     public Image aisleShelf;
     public Sprite[] aisleShelfImages;
     public RectTransform aisleNameRectTransform;
     private Vector3 aisleNameOriginalPosition;
+    private AisleSlot[] aisleSlots;
 
     // Saves the assigned aisle items to their slots so they can be restored when the aisle is changed
     // int is the aisle index
@@ -66,8 +62,6 @@ public class Screen2_UI : MonoBehaviour
                 slotIndex = availableSlots[randomIndex];
                 availableSlots.Remove(slotIndex);
 
-                
-                
                 assignedItems[i] = new AssignedAisleItem
                 {
                     aisleItem = aisle.items[i],
@@ -110,8 +104,6 @@ public class Screen2_UI : MonoBehaviour
                 aisleProduct.clicked += OnProductClicked;
 
                 aisleSlot.SetSlotItem(assigned.aisleItem, aisleProduct);
-                
-
             }
         }
         UpdateItemHighlights();
@@ -134,7 +126,7 @@ public class Screen2_UI : MonoBehaviour
 
     private void ChangeAisleName()
     {
-        aisleNameText.text = GameState.itemCatelog[currentAisleIdx].name;
+        aisleNameRectTransform.GetComponentInChildren<TextMeshProUGUI>().text = GameState.itemCatelog[currentAisleIdx].name;
     }
     public void PrevAisle()
     {
@@ -197,8 +189,6 @@ public class Screen2_UI : MonoBehaviour
         Debug.Log("Shopping card contents: " +  string.Join( ", ", GameState.shoppingCartItems.Select(item => item.name)));
         
         checkoutButton.gameObject.SetActive(GameState.shoppingCartItems.Count == GameState.itemCatelog.Length);
-
-
     }
 
     public void UpdateItemHighlights()

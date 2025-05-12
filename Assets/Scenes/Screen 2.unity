@@ -3441,8 +3441,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkoutButton: {fileID: 1531297266}
-  aisleNameText: {fileID: 516729134}
-  aisleProductsGridLayout: {fileID: 0}
   aisleProductsPrefab: {fileID: 8194206238659316051, guid: df6ca438d00fadb4d9e6caeb4ca895ea, type: 3}
   productInfoUI: {fileID: 1484428057}
   aisleSlotContainer: {fileID: 689213717}
